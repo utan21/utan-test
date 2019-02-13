@@ -1,0 +1,74 @@
+
+.tt {
+  margin-bottom: 50px;
+}
+.about-font {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  color: #555;
+}
+
+.he-btn{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:1.8em;
+  font-weight: bold;
+  padding:0 1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.he-btn:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.he-btn:before,.he-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}  
+.he-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.he-btn:hover:before,.he-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+ 
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+} 
+.title {
+  opacity: 0;
+  animation: show 0.35s forwards ease-in-out 0.5s;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
